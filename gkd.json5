@@ -1,7 +1,7 @@
 {
   id: 10001,
   name: "杰森订阅",
-  version: 5,
+  version: 6,
   author: "杰森",
   updateUrl: "",
   categories: [],
