@@ -1,7 +1,7 @@
 {
   id: 10001,
   name: "杰森订阅",
-  version: 7,
+  version: 8,
   author: "杰森",
   updateUrl: "",
   categories: [],
@@ -20,41 +20,65 @@
             {
               key: 0,
               matches: [
-                '[id="mark.via:id/ao"][checkable=true][checked=false][visibleToUser=true]',
+                '[id="mark.via:id/ao"][checkable=true][checked=false][visibleToUser=true]'
               ],
-              snapshotUrls: ["https://i.gkd.li/i/1795619367735"],
-            },
-          ],
-        },
-      ],
+              snapshotUrls: ["https://i.gkd.li/i/1795619367735"]
+            }
+          ]
+        }
+      ]
     },
     {
       id: "com.taobao.idlefish",
       name: "闲鱼",
       groups: [
         {
-          key: 1,
-          name: "功能类-弹窗确定按钮",
-          desc: "点击弹窗中的确定按钮",
+          key: 0,
+          name: '功能类-弹窗确定按钮',
+          desc: '点击弹窗中的确定按钮',
           enable: true,
           actionCd: 1000,
           fastQuery: true,
           actionMaximum: 1,
           matchTime: 10000,
-          resetMatch: "app",
+          resetMatch: 'app',
           rules: [
             {
               key: 0,
               matches: [
-                '[id="com.taobao.idlefish:id/right_btn"][visibleToUser=true]',
+                '[id="com.taobao.idlefish:id/right_btn"][visibleToUser=true]'
               ],
-              excludeMatches: [],
-              fastQuery: true,
-              snapshotUrls: ["https://i.gkd.li/i/1795657983340"],
-            },
-          ],
-        },
-      ],
+              snapshotUrls: ["这里填你的闲鱼快照"]
+            }
+          ]
+        }
+      ]
     },
-  ],
+    {
+      id: "com.tencent.mm",
+      name: "微信",
+      groups: [
+        {
+          key: 0,
+          name: '微信-版本更新',
+          desc: '点击关于页面的版本更新选项',
+          enable: true,
+          actionCd: 1000,
+          fastQuery: true,
+          actionMaximum: 1,
+          matchTime: 10000,
+          resetMatch: 'app',
+          rules: [
+            {
+              key: 0,
+              matches: [
+                '[text="版本更新"][visibleToUser=true]'
+              ],
+              snapshotUrls: ["这里放你捕获的快照"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
