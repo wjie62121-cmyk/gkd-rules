@@ -1,0 +1,32 @@
+{
+  id: 10001,
+  name: "我的测试订阅",
+  version: 4,
+  author: "你",
+  updateUrl: "",
+  categories: [],
+  globalGroups: [],
+  apps: [
+    {
+      id: "mark.via",
+      name: "Via浏览器",
+      groups: [
+        {
+          key: 0,
+          name: "复选框自动勾选",
+          desc: "自动勾选页面复选框",
+          enable: true,
+          rules: [
+            {
+              key: 0,
+              matches: [
+                '[id="mark.via:id/ao"][checkable=true][checked=false][visibleToUser=true]'
+              ],
+              snapshotUrls: ["https://i.gkd.li/i/1795619367735"],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
