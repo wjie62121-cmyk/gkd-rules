@@ -1,7 +1,7 @@
 {
   id: 10001,
   name: "杰森订阅",
-  version: 6,
+  version: 7,
   author: "杰森",
   updateUrl: "",
   categories: [],
@@ -26,6 +26,30 @@
             },
           ],
         },
+      ],
+    },
+  ],
+}，
+{
+  key: 1,
+  name: '功能类-弹窗确定按钮',
+  desc: '点击弹窗中的确定按钮',
+  enable: true,
+  actionCd: 1000,
+  fastQuery: true,
+  actionMaximum: 1,
+  matchTime: 10000,
+  resetMatch: 'app',
+  rules: [
+    {
+      key: 0,
+      matches: [
+        '[id="com.taobao.idlefish:id/right_btn"][visibleToUser=true]',
+      ],
+      excludeMatches: [],
+      fastQuery: true,
+      snapshotUrls: [
+        'https://i.gkd.li/i/1795657983340',
       ],
     },
   ],
