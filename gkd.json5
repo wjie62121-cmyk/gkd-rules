@@ -1,8 +1,8 @@
 {
   id: 10001,
-  name: "我的测试订阅",
+  name: "杰森订阅",
   version: 5,
-  author: "你",
+  author: "杰森",
   updateUrl: "",
   categories: [],
   globalGroups: [],
